@@ -1,5 +1,5 @@
 # HUST Computer Composition Lab  
 
 ## Finished
-[x] Data Representation
-[ ] ......
+- [x] Data Representation
+- [ ] ......
