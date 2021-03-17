@@ -16902,6 +16902,44 @@ c
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="4" loc="(540,870)" name="ROM">
+      <a name="addrWidth" val="10"/>
+      <a name="dataWidth" val="32"/>
+      <a name="label" val="指令存储器"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="contents">addr/data: 10 32
+20110001 8000c05 20110001 20120002 20130003 8000c09 20110001 20120002
+20130003 8000c0d 20110001 20120002 20130003 8000c11 20110001 20120002
+20130003 c000cb8 20100001 20110001 118fc0 112020 20020022 c
+118882 12200001 8000c15 112020 20020022 c 20110001 118880
+112020 20020022 c 12200001 8000c1f 20110001 118fc0 112020
+20020022 c 1188c3 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 20100001 109fc0 139fc3 8021 2012000c 24160003
+26100001 3210000f 20080008 20090001 139900 2709825 132020 20020022
+c 1094022 1500fff9 22100001 2018000f 2188024 108700 20080008
+20090001 139902 2709825 132021 20020022 c 1094022 1500fff9
+108702 2c9b022 12c00001 8000c50 4020 1084027 84400 3508ffff
+82021 20020022 c 2010ffff 20110000 ae300000 22100001 22310004
+ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000 22100001
+22310004 ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000
+22100001 22310004 ae300000 22100001 22310004 ae300000 22100001 22310004
+ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000 22100001
+22310004 ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000
+22100001 22310004 ae300000 22100001 22310004 22100001 8020 2011003c
+8e130000 8e340000 274402a 11000002 ae330000 ae140000 2231fffc 1611fff8
+102020 20020022 c 22100004 2011003c 1611fff2 20020032 c
+20100000 22100001 102020 20020022 c 22100002 102020 20020022
+c 22100003 102020 20020022 c 22100004 102020 20020022
+c 22100005 102020 20020022 c 22100006 102020 20020022
+c 22100007 102020 20020022 c 22100008 102020 20020022
+20020022 c 3e00008
+</a>
+      <a name="Select" val="high"/>
+    </comp>
     <comp lib="0" loc="(1030,100)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="width" val="32"/>
@@ -16980,6 +17018,20 @@ c
       <a name="bit29" val="none"/>
       <a name="bit30" val="none"/>
       <a name="bit31" val="none"/>
+    </comp>
+    <comp loc="(780,540)" name="流水线关卡">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp loc="(1530,540)" name="流水线关卡">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
     </comp>
     <comp lib="6" loc="(903,312)" name="Text">
       <a name="text" val="暂停节拍，不能为0"/>
@@ -17367,6 +17419,13 @@ c
       <a name="offcolor" val="#dcdcdc"/>
       <a name="bg" val="#ffffff"/>
     </comp>
+    <comp loc="(2960,540)" name="流水线关卡">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="5" loc="(130,110)" name="LED">
       <a name="facing" val="east"/>
       <a name="color" val="#f00000"/>
@@ -17503,6 +17562,13 @@ c
       <a name="label" val="WB.PC"/>
       <a name="labelloc" val="south"/>
       <a name="labelfont" val="SansSerif plain 10"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp loc="(2210,540)" name="流水线关卡">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
     <comp lib="0" loc="(690,30)" name="Probe">
@@ -25589,6 +25655,93 @@ afb60000 23bd0004 20160002 20140003 20150001 168020 108100 2149825
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="Dialog plain 12"/>
     <a name="clabelcolor" val="#000000"/>
+    <appear>
+      <rect fill="#ffffff" height="690" rx="5" ry="5" stroke="#000000" stroke-width="2" width="40" x="50" y="50"/>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="33" y="114">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="34" y="253">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="35" y="391">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="35" y="492">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="37" y="592">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="40" y="612">3</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="38" y="634">5</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="37" y="653">3</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="43" y="672">5</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="38" y="695">32</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="35" y="714">4</text>
+      <text font-family="Dialog" font-size="12" text-anchor="middle" x="43" y="732">4</text>
+      <circ-port height="8" pin="400,190" width="8" x="46" y="66"/>
+      <circ-port height="8" pin="510,190" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="220,210" width="8" x="46" y="106"/>
+      <circ-port height="8" pin="400,240" width="8" x="46" y="126"/>
+      <circ-port height="8" pin="510,240" width="8" x="46" y="146"/>
+      <circ-port height="8" pin="400,290" width="8" x="46" y="166"/>
+      <circ-port height="8" pin="510,290" width="8" x="46" y="186"/>
+      <circ-port height="8" pin="400,340" width="8" x="46" y="206"/>
+      <circ-port height="8" pin="510,340" width="8" x="46" y="226"/>
+      <circ-port height="8" pin="220,350" width="8" x="46" y="246"/>
+      <circ-port height="8" pin="400,390" width="8" x="46" y="266"/>
+      <circ-port height="8" pin="510,390" width="8" x="46" y="286"/>
+      <circ-port height="8" pin="400,440" width="8" x="46" y="306"/>
+      <circ-port height="8" pin="510,440" width="8" x="46" y="326"/>
+      <circ-port height="8" pin="400,490" width="8" x="46" y="346"/>
+      <circ-port height="8" pin="510,490" width="8" x="46" y="366"/>
+      <circ-port height="8" pin="220,500" width="8" x="46" y="386"/>
+      <circ-port height="8" pin="400,540" width="8" x="46" y="406"/>
+      <circ-port height="8" pin="510,540" width="8" x="46" y="426"/>
+      <circ-port height="8" pin="400,590" width="8" x="46" y="446"/>
+      <circ-port height="8" pin="510,590" width="8" x="46" y="466"/>
+      <circ-port height="8" pin="220,640" width="8" x="46" y="486"/>
+      <circ-port height="8" pin="400,640" width="8" x="46" y="506"/>
+      <circ-port height="8" pin="510,640" width="8" x="46" y="526"/>
+      <circ-port height="8" pin="400,720" width="8" x="46" y="546"/>
+      <circ-port height="8" pin="400,760" width="8" x="46" y="566"/>
+      <circ-port height="8" pin="220,790" width="8" x="46" y="586"/>
+      <circ-port height="8" pin="400,810" width="8" x="46" y="606"/>
+      <circ-port height="8" pin="540,840" width="8" x="46" y="626"/>
+      <circ-port height="8" pin="400,870" width="8" x="46" y="646"/>
+      <circ-port height="8" pin="540,900" width="8" x="46" y="666"/>
+      <circ-port height="8" pin="220,930" width="8" x="46" y="686"/>
+      <circ-port height="8" pin="400,930" width="8" x="46" y="706"/>
+      <circ-port height="8" pin="400,990" width="8" x="46" y="726"/>
+      <circ-port height="10" pin="380,1210" width="10" x="85" y="65"/>
+      <circ-port height="10" pin="490,1210" width="10" x="85" y="85"/>
+      <circ-port height="10" pin="200,1230" width="10" x="85" y="105"/>
+      <circ-port height="10" pin="380,1260" width="10" x="85" y="125"/>
+      <circ-port height="10" pin="490,1260" width="10" x="85" y="145"/>
+      <circ-port height="10" pin="380,1310" width="10" x="85" y="165"/>
+      <circ-port height="10" pin="490,1310" width="10" x="85" y="185"/>
+      <circ-port height="10" pin="380,1360" width="10" x="85" y="205"/>
+      <circ-port height="10" pin="490,1360" width="10" x="85" y="225"/>
+      <circ-port height="10" pin="200,1370" width="10" x="85" y="245"/>
+      <circ-port height="10" pin="380,1410" width="10" x="85" y="265"/>
+      <circ-port height="10" pin="490,1410" width="10" x="85" y="285"/>
+      <circ-port height="10" pin="380,1460" width="10" x="85" y="305"/>
+      <circ-port height="10" pin="490,1460" width="10" x="85" y="325"/>
+      <circ-port height="10" pin="380,1510" width="10" x="85" y="345"/>
+      <circ-port height="10" pin="490,1510" width="10" x="85" y="365"/>
+      <circ-port height="10" pin="200,1520" width="10" x="85" y="385"/>
+      <circ-port height="10" pin="380,1560" width="10" x="85" y="405"/>
+      <circ-port height="10" pin="490,1560" width="10" x="85" y="425"/>
+      <circ-port height="10" pin="380,1610" width="10" x="85" y="445"/>
+      <circ-port height="10" pin="490,1610" width="10" x="85" y="465"/>
+      <circ-port height="10" pin="200,1660" width="10" x="85" y="485"/>
+      <circ-port height="10" pin="380,1660" width="10" x="85" y="505"/>
+      <circ-port height="10" pin="490,1660" width="10" x="85" y="525"/>
+      <circ-port height="10" pin="380,1740" width="10" x="85" y="545"/>
+      <circ-port height="10" pin="380,1780" width="10" x="85" y="565"/>
+      <circ-port height="10" pin="200,1810" width="10" x="85" y="585"/>
+      <circ-port height="10" pin="380,1830" width="10" x="85" y="605"/>
+      <circ-port height="10" pin="520,1860" width="10" x="85" y="625"/>
+      <circ-port height="10" pin="380,1890" width="10" x="85" y="645"/>
+      <circ-port height="10" pin="520,1920" width="10" x="85" y="665"/>
+      <circ-port height="10" pin="200,1950" width="10" x="85" y="685"/>
+      <circ-port height="10" pin="380,1950" width="10" x="85" y="705"/>
+      <circ-port height="10" pin="380,2010" width="10" x="85" y="725"/>
+      <circ-port height="8" pin="1040,2260" width="8" x="66" y="46"/>
+      <circ-port height="8" pin="1110,2260" width="8" x="66" y="736"/>
+      <circ-port height="8" pin="1170,2260" width="8" x="56" y="736"/>
+      <circ-anchor facing="east" height="6" width="6" x="87" y="67"/>
+    </appear>
     <wire from="(400,190)" to="(420,190)"/>
     <wire from="(400,240)" to="(420,240)"/>
     <wire from="(400,290)" to="(420,290)"/>
@@ -27413,7 +27566,7 @@ afb60000 23bd0004 20160002 20140003 20150001 168020 108100 2149825
     </comp>
     <comp lib="0" loc="(520,1920)" name="Pin">
       <a name="facing" val="east"/>
-      <a name="output" val="false"/>
+      <a name="output" val="true"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="none"/>
@@ -27602,7 +27755,7 @@ afb60000 23bd0004 20160002 20140003 20150001 168020 108100 2149825
     </comp>
     <comp lib="0" loc="(520,1860)" name="Pin">
       <a name="facing" val="east"/>
-      <a name="output" val="false"/>
+      <a name="output" val="true"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="none"/>
